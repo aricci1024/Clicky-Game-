@@ -13,12 +13,12 @@ class App extends Component {
   };
 
   imageClick = event => {
-    const currentChar = event.target.alt;
+    const currentChar = event.target.src;
     const charClicked = this.state.simpsonClicked.indexOf(currentChar) > -1;
 
     if (charClicked) {
       this.setState({
-        simpson: this.state.simpson.sort(function(a, b) {
+        simpson: this.state.simpson.sort(function() {
           return 1 - Math.random();
         }),
         simpsonClicked: [],
@@ -28,7 +28,7 @@ class App extends Component {
 
     } else {
       this.setState({
-          simpson: this.state.simpson.sort(function(a, b) {
+          simpson: this.state.simpson.sort(function() {
             return 1 - Math.random();
           }),
           simpsonClicked: this.state.simpsonClicked.concat(
@@ -41,7 +41,7 @@ class App extends Component {
           if (this.state.score === 12) {
             alert("You Won!");
             this.setState({
-              simpson: this.state.simpson.sort(function(a, b) {
+              simpson: this.state.simpson.sort(function() {
                 return 1 - Math.random();
               }),
               simpsonClicked: [],
