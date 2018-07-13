@@ -19,7 +19,7 @@ class App extends Component {
     if (charClicked) {
       this.setState({
         simpson: this.state.simpson.sort(function(a, b) {
-          return 0.5 - Math.random();
+          return 1 - Math.random();
         }),
         simpsonClicked: [],
         score: 0
@@ -29,7 +29,7 @@ class App extends Component {
     } else {
       this.setState({
           simpson: this.state.simpson.sort(function(a, b) {
-            return 0.5 - Math.random();
+            return 1 - Math.random();
           }),
           simpsonClicked: this.state.simpsonClicked.concat(
             currentChar
@@ -42,7 +42,7 @@ class App extends Component {
             alert("You Won!");
             this.setState({
               simpson: this.state.simpson.sort(function(a, b) {
-                return 0.5 - Math.random();
+                return 1 - Math.random();
               }),
               simpsonClicked: [],
               score: 0
@@ -64,7 +64,6 @@ class App extends Component {
             <FriendCard
               imageClick={this.imageClick}
               id={simpson.id}
-              key={simpson.id}
               image={simpson.image}
             />
           ))}
