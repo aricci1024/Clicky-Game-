@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "image": "Apu.png"
+  },
+  {
+    "id": 2,
+    "image": "Bart.jpg"    
+  },
+  {
+    "id": 3,
+    "image": "Homer.png"
+  },
+  {
+    "id": 4,
+    "image": "Krusty.png" 
+  },
+  {
+    "id": 5,
+    "image": "Lisa.jpg"
+  },
+  {
+    "id": 6,
+    "image": "Marge.png"
+  },
+  {
+    "id": 7,
+    "image": "Milhous.png"
+  },
+  {
+    "id": 8,
+    "image": "moe2.png"
+  },
+  {
+    "id": 9,
+    "image": "Lovejoy.png"
+  },
+  {
+    "id": 10,
+    "image": "Burns.png"
+  },
+  {
+    "id": 11,
+    "image": "krabappel.png"
+  },
+  {
+    "id": 12,
+    "image": "Ned.png"
+  }
+]
